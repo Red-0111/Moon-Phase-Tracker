@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'San Francisco';
+    src: url('path/to/san-francisco.woff2') format('woff2'),
+         url('path/to/san-francisco.woff') format('woff');
+    /* Add other font formats if necessary */
+  }
+
+body{
+    background-image: url('tii.gif'); /* Replace with your image filename */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'San Francisco', Arial, sans-serif;
+    overflow:hidden;
+    
+  background-repeat: no-repeat;
+
+    
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  
+  .glass-box {
+    background-color: rgba(255, 255, 255, 0.6); /* Adjust the transparency as needed */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .moon-info {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  #moon-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  
+  /* Additional styles for the moon phase elements */
+  #moon-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'San Francisco', Arial, sans-serif;
+  }
+  
+  #moon-percentage,
+  #days-until-fullmoon,
+  #days-until-newmoon,
+  #moon-info {
+    font-size: 16px;
+    margin: 10px 0;
+    font-family: 'San Francisco', Arial, sans-serif;
+  }
+  
+  #moon-info {
+    font-weight: bold;
+  }
+
+  #moon-info::before {
+    content: '"';
+  }
+  
+  #moon-info::after {
+    content: '"';
+  }
